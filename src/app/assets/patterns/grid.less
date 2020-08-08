@@ -1,0 +1,36 @@
+.generateGrid(@prefix) {
+  .loop(@i) when (@i > 0) {
+    .loop(@i - 1);
+    &.@{prefix}-@{i} {
+      width: 100% * @i / 12;
+    }
+  }
+
+  .loop(12);
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+
+  .tile {
+    box-sizing: border-box;
+    min-height: 20px;
+    width: 100%;
+
+    @media (max-width: 540px) {
+      .generateGrid(sm);
+    }
+    @media (min-width: 541px) and (max-width: 720px) {
+      .generateGrid(md);
+    }
+    @media (min-width: 721px) and (max-width: 992px) {
+      .generateGrid(lg);
+    }
+    @media (min-width: 992px){
+      .generateGrid(xl);
+    }
+  }
+}

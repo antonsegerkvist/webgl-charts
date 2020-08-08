@@ -1,0 +1,33 @@
+[
+  {
+    "id": "home",
+    "url": "/",
+    "title": "Welcome"
+  },
+  {
+    "id": "getting-started",
+    "title": "About WebGL Charts",
+    "children": [
+      {
+        "id": "getting-started-about",
+        "url": "/getting-started/about",
+        "title": "About"
+      }
+    ]
+  },
+  {
+    "id": "line-chart",
+    "url": "/line-chart",
+    "title": "Line Chart"
+  },
+  {
+    "id": "bar-chart",
+    "url": "/bar-chart",
+    "title": "Bar Chart"
+  },
+  {
+    "id": "heatmap",
+    "url": "/heatmap",
+    "title": "Heatmap"
+  }
+]
