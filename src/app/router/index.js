@@ -20,6 +20,10 @@ const routes = [
     path: '/getting-started/develop',
     component: () => import(/* webpackChunkName: "getting-started-develop" */ '@/app/views/getting-started/Develop.vue'),
   },
+  {
+    path: '/line-chart',
+    component: () => import(/* webpackChunkName: "line-chart" */ '@/app/views/LineChart.vue'),
+  },
 ];
 
 const router = new VueRouter({
